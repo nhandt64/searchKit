@@ -2,13 +2,20 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Drgnz search</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         *{
             margin : 0;
             padding: 0;
-            background : #f7ba79;
+        }
+        body {
+            
+           background: url("bg3.jpg");
+           background-repeat: no-repeat;
+           background-size: 100%;
+
         }
         #header {
             font-family: Georgia, 'Times New Roman', Times, serif;
@@ -45,7 +52,9 @@
             padding: 5px;
             border: 1px solid #444444;
         }
-
+        
+        
+        
     </style>
 </head>
 <body>
@@ -59,7 +68,7 @@
         </div>  
 
         <div class ="buttons">
-            <a id = "go" href = "#" onclick="lick()">Drgnz Search</a>
+            <a id = "go" href = "" onclick="lick()">Drgnz Search</a>
             <a href = "https://daynhauhoc.com">Go to Daynhauhoc.com</a>
         </div>
     </center>
@@ -79,6 +88,22 @@
             }
             return true;
         }
+
+        /*function setbackground()
+            {
+            window.setTimeout( "setbackground()", 1000); // 5000 milliseconds delay
+
+            
+            var r = Math.floor(Math.random()*255+1);
+            var g = Math.floor(Math.random()*255+1);
+            var b = Math.floor(Math.random()*255+1);
+
+
+            document.body.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+
+            }
+            window.onload = setbackground();
+     */
     </script>
 </body>
 </html>
