@@ -68,8 +68,8 @@
         </div>  
 
         <div class ="buttons">
-            <a id = "go" href = "" onclick="changeLink()">Drgnz Search</a>
-            <a href = "https://daynhauhoc.com">Go to Daynhauhoc.com</a>
+            <a id = "go" href = "">Drgnz Search</a>
+            <a id = "dnhs" href = "">Go to Daynhauhoc.com</a>
         </div>
     </center>
     <script type ="text/javascript">
@@ -92,6 +92,13 @@
             if (search_content == "") return false;
             var lnk = "https://www.google.com/search?source=hp&ei=6o04W6jiFort9QPGoJ7wBQ&q=" + search_content + "&oq=" + search_content + "&gs_l=psy-ab.3..35i39k1l2j0i131i67k1j0i67k1j0i131i67k1j0i67k1l5.4553.4746.0.5673.4.3.0.0.0.0.138.223.1j1.3.0....0...1.1.64.psy-ab..1.3.281.6..0j0i131k1.59.VlfHH5_4X6U";
             document.getElementById("go").href = lnk;
+        }
+        
+        document.getElementById("dnhs").onmouseover = function(){
+            var search_content = document.getElementById("form-search").value;
+            if (search_content == "") return false;
+            var lnk = "https://daynhauhoc.com/search?q="+s;
+            document.getElementById("dnhs").href = lnk;
         }
 
         /*function setbackground()
