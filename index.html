@@ -6,7 +6,7 @@
     <title>Drgnz search</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        ::-moz-placeholder{
+        ::placeholder{
             color: white;
         }
         html, body{
@@ -25,6 +25,10 @@
             font-family: Roboto, sans-serif;
         }
         @font-face{
+            font-family: Google;
+            src: url('font/google.ttf')
+        }
+        @font-face{
             font-family: Roboto;
             src: url('font/roboto.ttf');
         }
@@ -33,7 +37,6 @@
             font-size: 45px;
         }
         #header {
-            font-family: Georgia, 'Times New Roman', Times, serif;
             margin-top: 10%;
             padding-bottom: 30px;
         }
@@ -42,7 +45,7 @@
             width: 40%;
             line-height: 32px;
             padding: 45px;
-            height: 40%;
+            height: 35px
         }
 
         .form #form-search {
@@ -56,9 +59,10 @@
             font-family: Roboto, sans-serif;
         }
         input[type="text"]{
+            color: white;
             border: 0px;
             border-radius: 5px; 
-            background-color: rgba(0, 0, 0, .2)
+            background-color: rgba(0, 0, 0, .5)
         }
         a {
             text-decoration: none;
@@ -72,29 +76,30 @@
             height: 35px;
             width: 100px;
             color: white;
-            background-color: rgba(0, 0, 0, .2);
+            background-color: rgba(255,255,255, 0.3);
             margin: 15px 5px;
             border: 0px;
             border-radius: 5px;
         }
         input[type="submit"]:hover{
             cursor: pointer;
+            background-color: rgba(0, 0, 0, .7);
         }
         
     </style>
 </head>
 <body>
-    <form method="get" action="https://www.google.com/search">
+    <form method="get" action="https://www.google.com.vn/search" name="search">
     <center>
-        <div id = "header">
-            <h1><span style="color : blue">D</span><span style="color : red">r</span><span style=" color: yellow">g</span><span style="color : blue">n</span><span style="color: springgreen">z</span></h1>
+        <div id="header">
+            <h1 style="font-family: Google, sans-serif; color: #00ffff;">Drgnz</h1>
         </div>
         <div class="form">
-            <input type="text" id="form-search" name="q" placeholder="Search Drgnz or type URL">
+            <input type="text" id="form-search" name="q" placeholder="Type here to search with Drgnz">
         </div>  
-        <div class ="buttons">
+        <div class="buttons">
             <input type="submit" value="Drgnz Search">
-            <input type="submit" value="Search on Daynhauhoc.com" style="width: 200px;">
+            <input type="submit" value="Search on Daynhauhoc.com" style="width: 200px;" onclick="document.forms['search']['q'].value += ' site:daynhauhoc.com'">
         </div>
     </center>
     </form>
