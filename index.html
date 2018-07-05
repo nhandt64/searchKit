@@ -6,58 +6,104 @@
     <title>Drgnz search</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        ::placeholder{
+            color: white;
+        }
+        html, body{
+            width: 100%;
+            height: 100%;
+            overflow-y: hidden;
+        }
         *{
             margin : 0;
             padding: 0;
         }
         body {
-            height:100%;
-            
-           background: url("https://images.pexels.com/photos/66869/green-leaf-natural-wallpaper-royalty-free-66869.jpeg?cs=srgb&dl=green-green-leaf-leaf-66869.jpg&fm=jpg") center no-repeat; 
+            height: 100%;
+            background: url('bg2.jpg') center no-repeat;
+            background-size: 100%;
+            font-family: Roboto, sans-serif;
+        }
+        @font-face{
+            font-family: Google;
+            src: url('font/google.ttf')
+        }
+        @font-face{
+            font-family: Roboto;
+            src: url('font/roboto.ttf');
+        }
+        h1{
+            font-family: Roboto, sans-serif;
+            font-size: 45px;
         }
         #header {
-            font-family: Georgia, 'Times New Roman', Times, serif;
             margin-top: 10%;
             padding-bottom: 30px;
         }
+
         #form-search { 
-            width: 450px;
+            width: 40%;
             line-height: 32px;
-            padding: 20px 10px;
+            padding: 45px;
+            height: 35px
         }
         .form #form-search {
             padding: 0 8px;
+        }
+        button {
+            padding: 5px;
             background: white;
         }
-        
-        input[type="submit"] {
-            
-            color : #333;
+        input{
+            font-family: Roboto, sans-serif;
+        }
+        input[type="text"]{
+            color: white;
+            border: 0px;
+            border-radius: 5px; 
+            background-color: rgba(0, 0, 0, .5)
+        }
+        a {
+            text-decoration: none;
+            color : #333333;
+
             font-weight: bold;
             background: white;
             padding: 15px;
             margin: 30px 10px;
             border: 1px solid #999999;
         }
-        
-        
+        input[type="submit"]{
+            height: 35px;
+            width: 100px;
+            color: white;
+            background-color: rgba(255,255,255, 0.3);
+            margin: 15px 5px;
+            border: 0px;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover{
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, .7);
+        }
         
     </style>
 </head>
 <body>
-    <form method="get" action="https://google.com/search">
-    <center>
-        <div id = "header">
-            <h1><span style="color : blue">D</span><span style="color : red">r</span><span style=" color: yellow">g</span><span style="color : blue">n</span><span style="color: springgreen">z</span></h1>
-        </div>
-        
-        <div class="form">
-                <input id="form-search" name="q" placeholder="Search Drgnz or type URL">
-        </div>  
+    <form method="get" action="https://www.google.com.vn/search" name="search">
 
-        <div class ="buttons">
+    <center>
+        <div id="header">
+            <h1 style="font-family: Google, sans-serif; color: #00ffff;">Drgnz</h1>
+        </div>
+        <div class="form">
+
+            <input type="text" id="form-search" name="q" placeholder="Type here to search with Drgnz">
+        </div>  
+        <div class="buttons">
             <input type="submit" value="Drgnz Search">
-            <input type="submit" value="Search on Daynhauhoc" style="width: 200px;">
+            <input type="submit" value="Search on Daynhauhoc.com" style="width: 200px;" onclick="document.forms['search']['q'].value += ' site:daynhauhoc.com'">
+
         </div>
     </center>
     </form>
