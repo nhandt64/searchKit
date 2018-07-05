@@ -40,13 +40,14 @@
             margin-top: 10%;
             padding-bottom: 30px;
         }
-
+        
         #form-search { 
             width: 40%;
             line-height: 32px;
             padding: 45px;
             height: 35px
         }
+
         .form #form-search {
             padding: 0 8px;
         }
@@ -63,25 +64,35 @@
             border-radius: 5px; 
             background-color: rgba(0, 0, 0, .5)
         }
-        a {
-            text-decoration: none;
-            color : #333333;
 
-            font-weight: bold;
-            background: white;
-            padding: 15px;
-            margin: 30px 10px;
-            border: 1px solid #999999;
-        }
-        input[type="submit"]{
+        .buttons input[type="submit"]{
+            padding : 0px 14px;;
             height: 35px;
-            width: 100px;
             color: white;
             background-color: rgba(255,255,255, 0.3);
             margin: 15px 5px;
             border: 0px;
             border-radius: 5px;
         }
+
+        .otherbtns input[type="submit"] {
+            color: white;
+            background-color: rgba(255,255,255, 0.3);
+            margin: 15px 5px;
+            border: 0px;
+            border-radius: 5px;
+            padding : 10px 10px;
+
+        }
+
+        .otherbtns {
+            position: fixed;
+            bottom: 0;
+            width: 408.11px;
+            left: 50%; /* Negative half of height. */
+            margin-left : -204.055px;
+        }
+
         input[type="submit"]:hover{
             cursor: pointer;
             background-color: rgba(0, 0, 0, .7);
@@ -90,22 +101,35 @@
     </style>
 </head>
 <body>
-    <form method="get" action="https://www.google.com.vn/search" name="search">
-
+    <form method="get" action="https://www.google.com/search" name="search">
     <center>
         <div id="header">
             <h1 style="font-family: Google, sans-serif; color: #00ffff;">Drgnz</h1>
         </div>
         <div class="form">
-
             <input type="text" id="form-search" name="q" placeholder="Type here to search with Drgnz">
         </div>  
         <div class="buttons">
-            <input type="submit" value="Drgnz Search">
-            <input type="submit" value="Search on Daynhauhoc.com" style="width: 200px;" onclick="document.forms['search']['q'].value += ' site:daynhauhoc.com'">
-
+            <input type="submit" value="Drgnz Search" onclick="document.forms['search'].action = 'https://google.com/search'">
+            <input type="submit" value="Search on Daynhauhoc" onclick="document.forms['search'].action = 'https://daynhauhoc.com/search'">
+        </div>
+        <div class="otherbtns">
+            <span style="color:white;">Other : </span>
+            <input type="submit" value="Movies" onclick="{
+                
+            }"/>
+            <input type="submit" value="Songs" />
+            <input type="submit" value="Youtube" onclick="{
+                document.forms['search'].action = 'https://www.youtube.com/results';
+                document.getElementById('form-search').name='search_query';
+            }"/>
+            <input type="submit" value="Ebook" onclick="{
+                document.forms['search']['q'].value += ' PDF';
+                document.forms['search'].action = 'https://google.com/search';
+            }"/>
         </div>
     </center>
     </form>
 </body>
 </html>
+
