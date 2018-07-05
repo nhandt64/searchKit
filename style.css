@@ -1,0 +1,91 @@
+::placeholder{
+    color: white;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+*{
+    margin : 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    background: url('bg2.jpg') center no-repeat;
+    background-size: cover;
+    font-family: Roboto, sans-serif;
+}
+@font-face{
+    font-family: Google;
+    src: url('font/google.ttf')
+}
+@font-face{
+    font-family: Roboto;
+    src: url('font/roboto.ttf');
+}
+h1{
+    font-family: Roboto, sans-serif;
+    font-size: 45px;
+}
+#header {
+    margin-top: 10%;
+    padding-bottom: 30px;
+}
+
+#form-search { 
+    width: 40%;
+    line-height: 32px;
+    padding: 45px;
+    height: 35px
+}
+
+.form #form-search {
+    padding: 0 8px;
+}
+button {
+    padding: 5px;
+    background: white;
+}
+input{
+    font-family: Roboto, sans-serif;
+}
+input[type="text"]{
+    color: white;
+    border: 0px;
+    border-radius: 5px; 
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.buttons input[type="submit"]{
+    padding : 0px 14px;;
+    height: 35px;
+    color: white;
+    background-color: rgba(255,255,255, 0.3);
+    margin: 15px 5px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.otherbtns input[type="submit"] {
+    color: white;
+    background-color: rgba(255,255,255, 0.3);
+    margin: 15px 5px;
+    border: 0px;
+    border-radius: 5px;
+    padding : 10px 10px;
+
+}
+
+.otherbtns {
+    position: fixed;
+    bottom: 0;
+    width: 408.11px;
+    left: 50%; /* Negative half of height. */
+    margin-left : -204.055px;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .7);
+}
