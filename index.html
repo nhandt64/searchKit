@@ -5,121 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Drgnz search</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        ::placeholder{
-            color: white;
-        }
-        html, body{
-            width: 100%;
-            height: 100%;
-            overflow-y: hidden;
-        }
-        *{
-            margin : 0;
-            padding: 0;
-        }
-        body {
-            height: 100%;
-            background: url('bg2.jpg') center no-repeat;
-            background-size: 100%;
-            font-family: Roboto, sans-serif;
-        }
-        @font-face{
-            font-family: Google;
-            src: url('font/google.ttf')
-        }
-        @font-face{
-            font-family: Roboto;
-            src: url('font/roboto.ttf');
-        }
-        h1{
-            font-family: Roboto, sans-serif;
-            font-size: 45px;
-        }
-        #header {
-            margin-top: 10%;
-            padding-bottom: 30px;
-        }
-        
-        #form-search { 
-            width: 40%;
-            line-height: 32px;
-            padding: 45px;
-            height: 35px
-        }
-
-        .form #form-search {
-            padding: 0 8px;
-        }
-        button {
-            padding: 5px;
-            background: white;
-        }
-        input{
-            font-family: Roboto, sans-serif;
-        }
-        input[type="text"]{
-            color: white;
-            border: 0px;
-            border-radius: 5px; 
-            background-color: rgba(0, 0, 0, .5)
-        }
-
-        .buttons input[type="submit"]{
-            padding : 0px 14px;;
-            height: 35px;
-            color: white;
-            background-color: rgba(255,255,255, 0.3);
-            margin: 15px 5px;
-            border: 0px;
-            border-radius: 5px;
-        }
-
-        .otherbtns input[type="submit"] {
-            color: white;
-            background-color: rgba(255,255,255, 0.3);
-            margin: 15px 5px;
-            border: 0px;
-            border-radius: 5px;
-            padding : 10px 10px;
-
-        }
-
-        .otherbtns {
-            position: fixed;
-            bottom: 0;
-            width: 408.11px;
-            left: 50%; /* Negative half of height. */
-            margin-left : -204.055px;
-        }
-
-        input[type="submit"]:hover{
-            cursor: pointer;
-            background-color: rgba(0, 0, 0, .7);
-        }
-        
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<!--
+    Developed by Waterafall, Wello6143 and Harry Coder. With lots of love from daynhauhoc.com 
+    Code và lập trình bởi Waterafall, Wello6143 và HarryCoder . Với muôn vàn sự hỗ trợ từ daynhauhoc.com
+-->
 <body>
-    <form method="get" action="https://www.google.com/search" name="search">
+    <div id="date">></div>
+    <div class="fork-me">
+        <a  class="gitlab-fork-ribbon" href="https://gitlab.com/Aragami1408/drgnzsearch/" title="Fork me on GitLab">Fork me on GitLab<img src="img/gitlab.png" class="gitlab-logo"></a>
+    </div>
+    <form method="get" action="https://www.google.com.vn/search" name="search">
     <center>
-        <div id="header">
-            <h1 style="font-family: Google, sans-serif; color: #00ffff;">Drgnz</h1>
-        </div>
-        <div class="form">
-            <input type="text" id="form-search" name="q" placeholder="Type here to search with Drgnz">
-        </div>  
+        <h1>Drgnz</h1> 
+        <p>search</p>
+        <input type="text" id="form-search" name="q" placeholder="Type here to search with Drgnz">  
         <div class="buttons">
-            <input type="submit" value="Drgnz Search" onclick="document.forms['search'].action = 'https://google.com/search'">
-            <input type="submit" value="Search on Daynhauhoc" onclick="document.forms['search'].action = 'https://daynhauhoc.com/search'">
+            <input type="submit" value="Drgnz Search">
+            <input type="submit" value="Search on Daynhauhoc.com" style="width: 200px;" onclick="{
+                document.forms['search'].action = 'https://daynhauhoc.com/search?';
+                document.getElementById('form-search').name='q';
+            }">
         </div>
-        <div class="otherbtns">
-            <span style="color:white;">Other : </span>
-            <input type="submit" value="Movies" onclick="{
-                
+    </center>
+    
+<script>
+    var now = new Date();
+    var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+    var months = new Array('Jan.','Feb.','Mar.','Apr.','May','Jun.','Jul.','Aug.','Sep.','Oct.','Nov.','Dec.');
+    var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+    function fourdigits(number) {
+        return (number < 1000) ? number + 1900 : number;
+    }
+    today = "Today is " + days[now.getDay()] + ", "  +
+        months[now.getMonth()] + " " +
+        date + ", " +
+        (fourdigits(now.getYear())) ;
+    document.getElementById("date").innerHTML = today;
+</script>    
+    <div class="footer">
+        <a class="made-by" href="https://daynhauhoc.com">Made with <ion-icon name="heart"></ion-icon> by DayNhauHoc.com</a>
+    </div>
+    <div class="otherbtns">
+            <span style="color:white;">other: </span>
+            <input type="submit" value="Songs" onclick="{
+                document.forms['search'].action = 'http://search.chiasenhac.vn/search.php?';
+                document.getElementById('form-search').name='s';
             }"/>
-            <input type="submit" value="Songs" />
-            <input type="submit" value="Youtube" onclick="{
+            <input type="submit" value="YouTube" onclick="{
                 document.forms['search'].action = 'https://www.youtube.com/results';
                 document.getElementById('form-search').name='search_query';
             }"/>
@@ -127,9 +62,8 @@
                 document.forms['search']['q'].value += ' PDF';
                 document.forms['search'].action = 'https://google.com/search';
             }"/>
-        </div>
-    </center>
+    </div>
     </form>
+<script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
 </body>
 </html>
-

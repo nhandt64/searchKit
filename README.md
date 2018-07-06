@@ -1,6 +1,6 @@
 # drgnz-search
-dùng cái tìm kiếm của google.com
+Một custom site tìm kiếm với Google
 
-link : http://drgnzsearch.rf.gd và https://khoatdk007.github.io/drgnzsearch/
+Repo này được cải tiến, bổ sung từ repo [khoatdk007/drgnzsearch](https://github.com/khoatdk007/drgnzsearch)
 
-vì không có tiền nên phải dùng hosting + tên miền miễn phí :v
+Đã optimize code và thêm nhiều chức năng
