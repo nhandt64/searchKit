@@ -84,7 +84,7 @@ input[type="submit"]:hover{
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-.gitlab-logo{
+.github-logo{
   width: 35px;
   height: 35px;
   text-align: center;
@@ -99,7 +99,7 @@ center > p{
   color: white;
   padding-bottom: 10px;
 }
-.gitlab-fork-ribbon{
+.github-fork-ribbon{
   background-color: transparent;
   color: white;
   border: none;
