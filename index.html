@@ -66,6 +66,10 @@
                 document.forms['search']['q'].value += ' PDF';
                 document.forms['search'].action = 'https://google.com/search';
             }"/>
+            <input type="submit" value="Wikipedia" onclick="{
+                document.forms['search'].action = 'https://wikipedia.org/w/index.php?';
+                document.getElementById('form-search').name='search';
+            }"/>
     </div>
     </form>
 <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
