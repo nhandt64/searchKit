@@ -10,7 +10,7 @@
   src: url('font/roboto.ttf');
 }
 html{
-  height:100%;
+  height: 100%;
   overflow: hidden;
 }
 *{
