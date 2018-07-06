@@ -3,11 +3,11 @@
 }
 @font-face{
   font-family: Google;
-  src: url('./font/google.ttf')
+  src: url('google.ttf')
 }
 @font-face{
   font-family: Roboto;
-  src: url('./font/roboto.ttf');
+  src: url('roboto.ttf');
 }
 html, body{
   width: 100%;
