@@ -59,8 +59,12 @@
                 document.forms['search'].action = 'https://download.com.vn/timkiem/';
             }"/>
             <input type="submit" value="Wikipedia" onclick="{
-                document.forms['search'].action = 'https://wikipedia.org/w/index.php?';
+                document.forms['search'].action = 'https://vi.wikipedia.org/w/index.php?';
                 document.getElementById('form-search').name='search';
+            }"/>
+            <input type="submit" value="Dịch (Anh-Việt)" onclick="{
+                document.forms['search'].action = 'https://translate.google.com/#en/vi/?';
+                document.getElementById('form-search').name='';
             }"/>
     </div>
     </form>
