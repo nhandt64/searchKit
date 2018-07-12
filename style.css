@@ -134,6 +134,8 @@ ion-icon{
 }
 .made-by{
   padding-left: 10px;
+  pointer-events: none;
+  cursor: default;
 }
 span{
   color: white
