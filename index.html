@@ -20,15 +20,13 @@
         <h1>seachKit</h1> 
         <input type="text" id="form-search" name="q" placeholder="Gõ tại đây thứ bạn cần tìm" required>  
         <div class="buttons">
-            <input type="submit" value="Tìm với Google" style="width: 15%">
-            <input type="submit" value="Tìm với Bing" style="width: 15%;" onclick="{
+            <input type="submit" value="Tìm với Google" style="width: 10%">
+            <input type="submit" value="Tìm với Bing" style="width: 10%" onclick="{
                 document.forms['search'].action = 'https://bing.com/search?';
                 document.getElementById('form-search').name='q';
             }">
         </div>
-
     </center>
-    
 <script>
     var now = new Date();
     var days = new Array('Chủ Nhật','thứ Hai','thứ Ba','thứ Tư','thứ Năm','thứ Sáu','thứ Bảy');
@@ -49,8 +47,8 @@
         <div class="otherbtns">
             <span style="color:white;">hoặc tìm: </span>
             <input type="submit" value="Nhạc" onclick="{
-                document.forms['search'].action='http://search.chiasenhac.vn/search.php';    
-                document.getElementById('form-search').name='s';                                   
+                document.forms['search'].action='https://soundcloud.com/search';    
+                document.getElementById('form-search').name='q';                                   
             }"/>
             <input type="submit" value="YouTube" onclick="{
 
