@@ -3,31 +3,26 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Drgnz search</title>
+    <title>searchKit - Tìm kiếm tất cả mọi thứ trên Internet chỉ với một chỗ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<!--
-    Developed by Waterafall, Wello6143 and Harry Coder. With lots of love from daynhauhoc.com 
-    Code và lập trình bởi Waterafall, Wello6143 và HarryCoder . Với muôn vàn sự hỗ trợ từ daynhauhoc.com
--->
 <body>
     <div id="date">></div>
     <div class="fork-me">
-        <a  class="github-fork-ribbon" href="https://github.com/Wello6143/drgnzsearch/" title="Fork me on GitHub">Fork me on GitHub<img src="img/github.png" class="github-logo"></a>
+        <a  class="github-fork-ribbon" href="https://github.com/Wello6143/searchkit" title="Fork me on GitHub">Fork trên GitHub<img src="img/github.png" class="github-logo"></a>
     </div>
     <form method="get" action="https://www.google.com.vn/search" name="search">
     <center>
-        <h1>Drgnz</h1> 
-        <p>search</p>
-        <input type="text" id="form-search" name="q" placeholder="Type here to search with Drgnz">  
+        <h1>seachKit</h1> 
+        <input type="text" id="form-search" name="q" placeholder="Gõ tại đây thứ bạn cần tìm" required>  
         <div class="buttons">
-            <input type="submit" value="Drgnz Search">
-            <input type="submit" value="Search on Daynhauhoc.com" style="width: 200px;" onclick="{
-                document.forms['search'].action = 'https://daynhauhoc.com/search?';
+            <input type="submit" value="Tìm với Google">
+            <input type="submit" value="Tìm với Bing" style="width: 200px;" onclick="{
+                document.forms['search'].action = 'https://bing.com/search?';
                 document.getElementById('form-search').name='q';
             }">
         </div>
@@ -36,24 +31,24 @@
     
 <script>
     var now = new Date();
-    var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
-    var months = new Array('Jan.','Feb.','Mar.','Apr.','May','Jun.','Jul.','Aug.','Sep.','Oct.','Nov.','Dec.');
+    var days = new Array('Chủ Nhật','thứ Hai','thứ Ba','thứ Tư','thứ Năm','thứ Sáu','thứ Bảy');
+    var months = new Array('tháng 1','tháng 2','tháng 3','tháng 4','tháng 5','tháng 6','tháng 7','tháng 8','tháng 9','tháng 10','tháng 11','tháng 12');
     var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
     function fourdigits(number) {
         return (number < 1000) ? number + 1900 : number;
     }
-    today = "Today is " + days[now.getDay()] + ", "  +
-        months[now.getMonth()] + " " +
-        date + ", " +
+    today = "Hôm nay là " + days[now.getDay()] + ", " + " ngày " +
+        date + " " +
+        months[now.getMonth()] + " " + " năm " +
         (fourdigits(now.getYear())) ;
     document.getElementById("date").innerHTML = today;
-</script>    
+</script> 
     <div class="footer">
         <a class="made-by" href="https://daynhauhoc.com">Made with <ion-icon name="heart"></ion-icon> by DayNhauHoc.com</a>
     </div>
         <div class="otherbtns">
-            <span style="color:white;">Other : </span>
-            <input type="submit" value="Songs" onclick="{
+            <span style="color:white;">hoặc tìm: </span>
+            <input type="submit" value="Nhạc" onclick="{
                 document.forms['search'].action='http://search.chiasenhac.vn/search.php';    
                 document.getElementById('form-search').name='s';                                   
             }"/>
@@ -62,9 +57,8 @@
                 document.forms['search'].action = 'https://www.youtube.com/results';
                 document.getElementById('form-search').name='search_query';
             }"/>
-            <input type="submit" value="Ebook" onclick="{
-                document.forms['search']['q'].value += ' PDF';
-                document.forms['search'].action = 'https://google.com/search';
+            <input type="submit" value="Phần mềm" onclick="{
+                document.forms['search'].action = 'https://download.com.vn/timkiem/';
             }"/>
             <input type="submit" value="Wikipedia" onclick="{
                 document.forms['search'].action = 'https://wikipedia.org/w/index.php?';

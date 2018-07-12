@@ -88,13 +88,6 @@ input[type="submit"]:hover{
   margin-left: 10px;
   vertical-align: bottom;
 }
-center > p{
-  text-align: center;
-  margin-top: -35px;
-  margin-right: -145px;
-  color: white;
-  padding-bottom: 10px;
-}
 .github-fork-ribbon{
   background-color: transparent;
   color: white;
