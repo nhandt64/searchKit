@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>searchKit - Tìm kiếm tất cả mọi thứ trên Internet chỉ với một chỗ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
-<body>
+<body style="font-family: 'Nunito', sans-serif;">
     <div id="date"></div>
     <div class="fork-me">
         <a  class="github-fork-ribbon" href="https://github.com/Wello6143/searchkit" title="Fork me on GitHub">Fork trên GitHub<img src="img/github.png" class="github-logo"></a>
@@ -42,7 +39,7 @@
     document.getElementById("date").innerHTML = today;
 </script>
     <div class="footer">
-        <a class="made-by" href="#">Được tạo ra bới sự <ion-icon name="heart"></ion-icon> của AeronsTek và DayNhauHoc.com</a>
+        <p class="made-by">&copy; <a href="https://aerons.ga">AeronsTek Team</a> & <a href="https://daynhauhoc.com">DayNhauHoc</a></p>
     </div>
     <div class="otherbtns">
         <span style="color:white;">hoặc tìm: </span>
@@ -72,7 +69,6 @@
         <input type="button" value="Lấy link tốc độ cao Fshare" onclick="get()" style="width: 35%">    
     </div>
     </form>
-<script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
 <script>
     var slow = document.getElementById("form-search").value;
     var speedy = slow.replace('fshare.vn', 'getlinkfshare.com');

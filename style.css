@@ -1,7 +1,7 @@
 ::placeholder{
   color: white;
 }
-@import url('https://fonts.googleapis.com/css?family=Roboto&subset=vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Nunito&subset=vietnamese');
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 html, body{
   width: 100%;
@@ -17,11 +17,10 @@ body{
   background: url('img/bg6.jpg') center no-repeat;
   background-size: cover;
   background-color: black;
-  font-family: Roboto, sans-serif;
- 
+  font-family: 'Nunito', sans-serif;
 }
 h1{
-  font-family: Righteous, sans-serif;
+  font-family: 'Righteous', sans-serif;
   font-size: 60px;
   color: #00ffff;
   margin-top: 10%;
@@ -46,14 +45,14 @@ button{
   background: white;
 }
 input{
-  font-family: Roboto, sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 input[type="text"]{
   color: white;
   border: 0px;
   border-radius: 5px; 
   background-color: rgba(0, 0, 0, .5);
-  font-family: Roboto, sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 center{
   margin-top: -10px;
@@ -71,7 +70,7 @@ input[type="button"], input[type="submit"]{
   margin: 15px 5px;
   border: 0px;
   border-radius: 5px;
-  font-family: Roboto, sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 input[type="button"]:hover,input[type="submit"]:hover{
   cursor: pointer;
@@ -134,8 +133,6 @@ ion-icon{
 }
 .made-by{
   padding-left: 10px;
-  pointer-events: none;
-  cursor: default;
 }
 span{
   color: white
