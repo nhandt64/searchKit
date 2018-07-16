@@ -63,7 +63,7 @@ a{
   text-decoration: none;
   color: white
 }
-input[type="submit"]{
+input[type="button"], input[type="submit"]{
   height: 35px;
   width: 100px;
   color: white;
@@ -73,7 +73,7 @@ input[type="submit"]{
   border-radius: 5px;
   font-family: Roboto, sans-serif;
 }
-input[type="submit"]:hover{
+input[type="button"]:hover,input[type="submit"]:hover{
   cursor: pointer;
   animation-name: color-change-button;
   animation-duration: 0.5s;
