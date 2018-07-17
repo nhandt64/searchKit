@@ -54,11 +54,14 @@ iframe{
   height: 30px;
   color: white;
   border: 0px;
-  border-radius: 5px; 
-  background-color: rgba(0, 0, 0, .5);
+  border-radius: 25px; 
+  background-color: rgba(255,255,255,.5);
+  transition: background-color .5s;
+  -webkit-transition: background-color .5s;
 }
 #form-search:focus{
   background-color: rgba(0, 0, 0, .7);
+  color: black;
   border: 1px;
 }
 button{
