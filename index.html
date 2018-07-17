@@ -11,7 +11,9 @@
 <body>
     <form method="get" action="https://www.google.com.vn/search" name="search">
     <center>
-        <h1>searchKit</h1>
+        <div class="header-wrapper">
+            <img src="img/header.png" class="header">
+        </div>
         <input type="text" id="form-search" name="q" placeholder="Gõ tại đây điều bạn cần tìm..." required>  
         <div class="buttons">
             <input type="submit" value="Tìm với Google" style="width: 15%">
@@ -23,7 +25,7 @@
     </center>
     <script id="lbdict_plugin_frame" type="text/javascript">!function(){var h={s:"https://dict.laban.vn",w:260,h:260,hl:2,th:3};function loadScript(t,e){var n=document.createElement("script");n.type="text/javascript",n.readyState?n.onreadystatechange=function(){("loaded"===n.readyState||"complete"===n.readyState)&&(n.onreadystatechange=null,e())}:n.onload=function(){e()},n.src=t,q=document.getElementById("lbdict_plugin_frame"),q.parentNode.insertBefore(n,q)}setTimeout(function(){loadScript("https://stc-laban.zdn.vn/dictionary/js/plugin/lbdictplugin.frame.min.js",function(){lbDictPluginFrame.init(h)})},1e3); }();</script>
     <div class="otherbtns">
-        <span style="color:white;">hoặc tìm: </span>
+        <span>hoặc tìm: </span>
         <input type="submit" value="Nhạc" onclick="{
             document.forms['search'].action='http://chiasenhac.vn/search.php?';    
             document.getElementById('form-search').name='s';                                   

@@ -26,18 +26,17 @@ html, body{
   font-family: 'Cabin';
 }
 body{
-  height: 100%;
-  background: url('img/bg.png') center no-repeat;
+  height: 100%; 
   background-size: cover;
-  background-color: black;
+  background: linear-gradient(to bottom right, #006699 0%, #00d77d 100%);
 }
-h1{
-  font-size: 60px;
-  color: #00ffff;
-  margin-top: 10%;
-  padding-bottom: 10px;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-  position: relative;
+.header-wrapper{
+  text-align: center;
+}
+.header{
+  width: 455px;
+  height: 125px;
+  text-align: center
 }
 iframe{
   width: 35%;
@@ -70,6 +69,7 @@ center{
   padding-top: 10px;
   align-self: center;
   width: 100%;
+  padding-top: 10%;
 }
 a{
   text-decoration: none;
@@ -102,7 +102,7 @@ ion-icon{
   padding-bottom: 10px;
   height: 3%
 }
-.footer p{
+.footer p, .footer a{
   color: white;
 }
 .made-by{
