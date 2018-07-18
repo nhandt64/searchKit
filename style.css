@@ -50,11 +50,11 @@ iframe{
   width: 40%;
   line-height: 32px;
   padding: 5px;
-  padding-left: 10px;
+  padding-left: 15px;
   height: 30px;
   color: white;
   border: 0px;
-  border-radius: 25px; 
+  border-radius: 30px; 
   background-color: rgba(255, 255, 255, .3);
   transition: background-color .5s;
   -webkit-transition: background-color .5s;
@@ -86,7 +86,7 @@ input[type="button"], input[type="submit"]{
   transition: background-color .5s;
   -webkit-transition: background-color .5s;
   border: 0px;
-  border-radius: 25px;
+  border-radius: 30px;
 }
 input[type="button"]:hover, input[type="submit"]:hover{
   cursor: pointer;
