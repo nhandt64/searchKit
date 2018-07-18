@@ -75,7 +75,12 @@ center{
 }
 a{
   text-decoration: none;
-  color: white
+  color: white;
+  transition: color .5s;
+  -webkit-transition: color .5s;
+}
+a:hover{
+  color: black;
 }
 input[type="button"], input[type="submit"]{
   height: 35px;
@@ -107,21 +112,22 @@ ion-icon{
   position: fixed;
   bottom: 0;
   padding-bottom: 10px;
-  height: 3%
+  height: 3%;
+  width: 100%;
 }
-.footer p, .footer a{
+.footer span, .footer a{
   color: white;
 }
 .made-by{
   padding-left: 10px;
 }
+.repos{
+  padding-right: 10px;
+  float: right;
+}
+.repos a{
+  margin-left: 20px;
+}
 span{
   color: white
-}
-a{
-  transition: color .5s;
-  -webkit-transition: color .5s;
-}
-a:hover{
-  color: black;
 }
