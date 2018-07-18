@@ -1,6 +1,7 @@
-# drgnz-search
-Một custom site tìm kiếm với Google
+#searchKit
 
-Repo này được cải tiến, bổ sung từ repo [khoatdk007/drgnzsearch](https://github.com/khoatdk007/drgnzsearch)
+Một trang tìm kiếm mọi thứ trên Internet dễ dàng
 
-Đã optimize code và thêm nhiều chức năng
+Repo này được cải tiến, bổ sung từ repo gốc: [khoatdk007/drgnzsearch](https://github.com/khoatdk007/drgnzsearch)
+
+Cải tiến bởi **AeronsTek Team** - **Wello6143**.
