@@ -74,8 +74,8 @@ center{
   padding-top: 10%;
 }
 a{
-  text-decoration: none;
   color: white;
+  text-decoration: none;
   transition: color .5s;
   -webkit-transition: color .5s;
 }
@@ -115,7 +115,7 @@ ion-icon{
   height: 3%;
   width: 100%;
 }
-.footer span, .footer a{
+.footer span{
   color: white;
 }
 .made-by{
