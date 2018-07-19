@@ -104,10 +104,6 @@ h1, .powered{
 #form-search:focus:-ms-input-placeholder {
   color: #808080;
 }
-button{
-  padding: 5px;
-  background: white;
-}
 center{
   padding-top: 10px;
   align-self: center;
@@ -142,7 +138,7 @@ input[type="button"]:hover, input[type="submit"]:hover{
 input[type="button"]:focus, input[type="submit"]:focus{
   outline: none;
 }
-.otherbtns{
+.otherbtns, .quick-go{
   text-align: center;
   left: 50%;
   margin-top: -15px;
