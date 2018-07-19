@@ -149,11 +149,13 @@ input[type="button"]:focus, input[type="submit"]:focus{
   padding-bottom: 10px;
   height: 3%;
   width: 100%;
+  text-align: center
 }
 .footer span{
   color: white;
 }
 .made-by{
+  float: left;
   padding-left: 10px;
 }
 .repos{
