@@ -168,3 +168,6 @@ input[type="button"]:focus, input[type="submit"]:focus{
 span{
   color: white
 }
+.ver{
+  left: 50%;
+}
