@@ -13,7 +13,6 @@
     <center>
         <div class="header-wrapper">
             <h1>searchKit</h1>
-            <p class="powered">powered by AeronsTek Team</p>
         </div>
         <input type="text" id="form-search" name="q" placeholder="Gõ tại đây điều bạn cần tìm..." required>  
         <div class="buttons">
@@ -24,17 +23,8 @@
             }">
         </div>
     </center>
-    <!--Tắt API dịch của Laban <script id="lbdict_plugin_frame" type="text/javascript">!function(){var h={s:"https://dict.laban.vn",w:260,h:260,hl:2,th:3};function loadScript(t,e){var n=document.createElement("script");n.type="text/javascript",n.readyState?n.onreadystatechange=function(){("loaded"===n.readyState||"complete"===n.readyState)&&(n.onreadystatechange=null,e())}:n.onload=function(){e()},n.src=t,q=document.getElementById("lbdict_plugin_frame"),q.parentNode.insertBefore(n,q)}setTimeout(function(){loadScript("https://stc-laban.zdn.vn/dictionary/js/plugin/lbdictplugin.frame.min.js",function(){lbDictPluginFrame.init(h)})},1e3); }();</script> -->
     <div class="otherbtns">
         <span>hoặc tìm: </span>
-        <input type="submit" value="Nhạc" onclick="{
-            document.forms['search'].action='http://chiasenhac.vn/search.php?';    
-            document.getElementById('form-search').name='s';                                   
-        }"/>
-        <input type="submit" value="Phim" onclick="{
-            document.forms['search'].action='http://vung.tv/tim-kiem/?';    
-            document.getElementById('form-search').name='q';                                   
-        }"/>
         <input type="submit" value="YouTube" onclick="{
             document.forms['search'].action = 'https://www.youtube.com/results';
             document.getElementById('form-search').name='search_query';
@@ -58,8 +48,7 @@
     </div>
     </form>
     <div class="footer">
-        <span class="made-by">&copy; <a href="#">AeronsTek Team</a> & <a href="https://daynhauhoc.com" target="_blank">DayNhauHoc</a></span>
-        <span class="ver">v.1.2.0</span>
+        <span class="made-by">&copy; <a href="#">Wello</a> & <a href="https://daynhauhoc.com" target="_blank">DayNhauHoc</a></span>
         <span class="repos"><a href="about.html" target="_blank">Thông tin trang</a><a href="https://github.com/Wello6143/searchKit" target="_blank">Fork trên GitHub</a><a href="https://github.com/khoatdk007/drgnzsearch" target="_blank">Bản gốc</a></span>
     </div>
 <script src="js/detectmobilebrowser.js"></script>
